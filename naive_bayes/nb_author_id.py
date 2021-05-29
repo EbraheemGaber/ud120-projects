@@ -20,7 +20,9 @@ from email_preprocess import preprocess
 ### and testing datasets, respectively
 ### labels_train and labels_test are the corresponding item labels
 features_train, features_test, labels_train, labels_test = preprocess()
-
+from sklearn.naive_bayes import GaussianNB
+clt=GaussianNB()
+clt.fit(labels_train ,features_train)
 
 
 
